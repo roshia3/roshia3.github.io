@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Roshia Dutta — Research Portfolio</title>
+    <script>
+      // Single-page app redirect for GitHub Pages.
+      // Encodes the current path into the query string, then redirects
+      // to the root so index.html can restore the URL before React boots.
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+      var redirectUrl = window.location.origin + '/?p=' +
+        encodeURIComponent(path.slice(1) + search + hash);
+      window.location.replace(redirectUrl);
+    </script>
+  </head>
+  <body></body>
+</html>
